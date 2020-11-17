@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Countries and its Capitals</title>
+</head>
+<body>
+<h1>Table of Country Capital's
+</h1>
+<table>
+<thead>
+	<tr>
+		<th>id</th>
+		<th>Country Capital</th>
+		<th>Country Name</th>
+	</tr>
+</thead>
+<tbody>
+	<tr th:each= "capital = ${listCapitals}">
+		<td th:text = "${Id}"></td>
+		<td th:text = "${Country_Capital}"></td>
+		<td th:text = "${Country_Name}"></td>
+	</tr>
+</tbody>
+</table>
+</body>
+</html>
